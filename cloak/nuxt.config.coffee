@@ -23,7 +23,9 @@ module.exports = mergeConfig boilerplate,
 
 
 	# Expect specially slug-ed towers to exist that will be loaded by error.vue
-	generate: fallback: true
+	generate:
+		fallback: true
+		dir: '../dist/cloak'
 
 	# Customize component autoloading
 	components: [
