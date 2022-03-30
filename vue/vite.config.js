@@ -26,5 +26,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  // Build options: https://vitejs.dev/config/#build-options
+  build: {
+    outDir: '../dist/vue'
   }
 })
