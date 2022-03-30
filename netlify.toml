@@ -1,3 +1,3 @@
 [build]
-  command = 'CI= cd vue && yarn build && cd ../nuxt && yarn generate && cd ../cloak && yarn generate && cd ..'
+  command = 'CI= cd vue && yarn build && cd ../nuxt && yarn generate && cd ../cloak && yarn generate && cd .. && cp -R vanilla-html dist/html'
   publish = 'dist'
