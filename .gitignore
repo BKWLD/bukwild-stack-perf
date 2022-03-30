@@ -40,3 +40,6 @@ sw.*
 
 # Local Netlify folder
 .netlify
+
+# Build folder
+dist/
