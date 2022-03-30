@@ -1,0 +1,3 @@
+[build]
+  command = 'CI= yarn build --cwd=vue && yarn build --cwd=nuxt && yarn generate --cwd=cloak'
+  publish = 'dist'
