@@ -7,7 +7,7 @@
 		<h1 class="title">Netlify Graph</h1>
 		<p class="subhead">A faster way to develop with APIs</p>
 		<div class="ctas">
-			<nuxt-link to="/get-started">
+			<nuxt-link to="/">
 				<btn>Learn More</btn>
 			</nuxt-link>
 		</div>

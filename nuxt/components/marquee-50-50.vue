@@ -7,10 +7,10 @@
 		<h1 class="title">Build the future of the web</h1>
 		<p class="subhead">Netlify unites an entire ecosystem of modern tools and services into a single, simple workflow for building high performance sites and apps.</p>
 		<div class="ctas">
-			<nuxt-link to="/get-started">
+			<nuxt-link to="/">
 				<btn>Get started for free</btn>
 			</nuxt-link>
-			<nuxt-link to="/get-started">Questions? Talk to an expert
+			<nuxt-link to="/">Questions? Talk to an expert
 			</nuxt-link>
 		</div>
 	</div>
