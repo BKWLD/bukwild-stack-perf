@@ -40,7 +40,11 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/gtm',
   ],
+  gtm: {
+    id: 'GTM-TM4BZ82'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
