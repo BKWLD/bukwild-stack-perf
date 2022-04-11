@@ -30,5 +30,6 @@ export default defineConfig({
   // Build options: https://vitejs.dev/config/#build-options
   build: {
     outDir: '../dist/vue'
-  }
+  },
+  base: '/vue/'
 })

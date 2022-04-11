@@ -1,83 +1,68 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import LayoutHeader from './components/layout/header.vue'
+import MarqueeSplit from './components/marquee-50-50.vue'
+import LogoGarden from './components/logo-garden.vue'
+import MarqueeBlue from './components/marquee-blue.vue'
+import LayoutFooter from './components/layout/footer.vue'
+
 </script>
 
 <template>
-  <div id="app">
-    <header>
-      <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" />
-      </div>
-    </header>
+	<div id="app" class="page">
+		<layout-header />
 
-    <main>
-      <TheWelcome />
+    <main id="main">
+
+      <marquee-split />
+
+      <logo-garden />
+
+      <marquee-blue />
+
+      <layout-footer />
+
     </main>
-  </div>
+
+	</div>
+
 </template>
 
 <style>
-@import './assets/base.css';
+.page {
+	font-family: 'Arimo', Arial, sans-serif;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+	/* Layout */
+	--gutter: 60px;
+	--gutter-mobile: 20px;
+	--max-w-small: calc(750px + var(--gutter) * 2);
+	--max-w-medium: calc(1060px + var(--gutter) * 2);
+	--max-w: calc(1280px + var(--gutter) * 2);
+	--max-w-wide: calc(1440px);
+	--max-w-full: calc(2560px);
 
-  font-weight: normal;
+	/* Breakpoints */
+	--desktop: 1440px;
+	--tablet: 768px;
+	--mobile: 500px;
+
+	/* Colors */
+	--blue: #2250F4;
+	--light-grey: #f2f5f8;
 }
 
-header {
-  line-height: 1.5;
+/* Resets */
+body {
+  margin: 0;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
+a {
+  color: black;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+img {
+  max-width: 100%;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-}
 </style>
