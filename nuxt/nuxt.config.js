@@ -3,7 +3,7 @@ export default {
   target: 'static',
 
 	router: {
-    base: '/cloak/'
+    base: '/nuxt/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
