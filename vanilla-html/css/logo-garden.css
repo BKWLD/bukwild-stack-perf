@@ -1,0 +1,14 @@
+.logo-garden {
+	margin: 0 auto;
+	padding: 80px var(--gutter);
+	max-width: var(--max-w-wide);
+	background-color: var(--light-grey);
+}
+
+.logo-garden .title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+}

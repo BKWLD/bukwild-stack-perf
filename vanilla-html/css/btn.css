@@ -1,0 +1,43 @@
+.btn {
+  position: relative;
+
+	/* // Center contents */
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	/* // Clear possibly inheritted underline */
+	text-decoration: none;
+
+	/* // Typography */
+	color: white;
+	/* fluid font-size, body-font-size, body-font-size-min */
+	font-weight: 700;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+}
+  /* // Make backgound state */
+.btn .shape {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  border-radius: 20px;
+}
+
+.btn .slot {
+  /* // Align slotted stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+
+	/* // Overlap the shape */
+	position: relative;
+
+}

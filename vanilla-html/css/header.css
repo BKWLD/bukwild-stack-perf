@@ -1,0 +1,27 @@
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	padding: 0 var(--gutter);
+	margin: 40px auto;
+	max-width: var(--max-w-wide);
+	font-weight: 700;
+}
+
+header .logo {
+	width: 100px;
+}
+
+header .center > * {
+	position: relative;
+	top: 6px;
+	padding-left: 22px;
+	font-size: 15px;
+}
+
+header .right {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+}
