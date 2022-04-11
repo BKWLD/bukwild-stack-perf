@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="right">
-		<img src="/graphql-playground.png" alt="Screenshot of GraphQL playground"/>
+		<img src="graphql-playground.png" alt="Screenshot of GraphQL playground"/>
 	</div>
 
 </div>

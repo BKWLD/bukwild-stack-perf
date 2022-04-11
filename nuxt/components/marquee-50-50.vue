@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="right">
-		<img src="/marquee-image.avif" alt="Screenshot of code editor and an ecommerce website"/>
+		<img src="marquee-image.avif" alt="Screenshot of code editor and an ecommerce website"/>
 	</div>
 
 </div>
