@@ -4,7 +4,7 @@
 	<header>
 		<div class="left">
 			<a href="/">
-				<img src="/netlify-logo.svg" alt="Netlify Logo" class="logo"/>
+				<img src="netlify-logo.svg" alt="Netlify Logo" class="logo"/>
 			</a>
 		</div>
 

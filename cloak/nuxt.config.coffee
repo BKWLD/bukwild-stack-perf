@@ -7,7 +7,7 @@ boilerplate = makeBoilerplate
 # Nuxt config
 module.exports = mergeConfig boilerplate,
 
-
+	router: base: '/cloak/'
 
 	buildModules: [
 	]
