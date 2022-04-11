@@ -114,7 +114,7 @@ export default
 	&:not([disabled])
 		+hover(true)
 			.shape
-				background primary-color-dark
+				background var(--blue)
 				transition-duration .2s
 		+active()
 			.shape
@@ -133,11 +133,12 @@ export default
 	// Typography
 	color white
 	fluid font-size, body-font-size, body-font-size-min
+	font-weight 700
 
 // Make backgound state
 .shape
 	expand()
-	background-color primary-color
+	background-color var(--blue)
 	transition background .4s, transform .1s, box-shadow .2s
 	+tablet-up()
 		border-radius btn-desktop-h * 0.5

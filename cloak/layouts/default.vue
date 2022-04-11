@@ -1,18 +1,20 @@
 <!-- General layout -->
 
-<template lang='pug'>
+<template>
 
-.default-layout
-	a.skip-content(href='#main') Skip to main content
+<div class="default-layout">
+	<a class="skip-content" href="#main">Skip to main content</a>
 
-	//- Header stuff
-	layout-header-desktop
-	layout-header-mobile
+	<layout-header />
 
-	//- Page content
-	main#main
-		nuxt.page
-		layout-footer
+	<main id="main">
+		<nuxt class="page"></nuxt>
+
+		<layout-footer />
+
+	</main>
+
+</div>
 
 </template>
 
@@ -56,4 +58,28 @@ main
 		fluid left, gutter, gutter-mobile
 		outline none
 
+</style>
+
+<style scoped>
+.default-layout {
+	font-family: 'Arimo', Arial, sans-serif;
+
+	/* Layout */
+	--gutter: 60px;
+	--gutter-mobile: 20px;
+	--max-w-small: calc(750px + gutter * 2);
+	--max-w-medium: calc(1060px + gutter * 2);
+	--max-w: calc(1280px + gutter * 2);
+	--max-w-wide: calc(1440px);
+	--max-w-full: calc(2560px);
+
+	/* Breakpoints */
+	--desktop: 1440px;
+	--tablet: 768px;
+	--mobile: 500px;
+
+	/* Colors */
+	--blue: #2250F4;
+	--light-grey: #f2f5f8;
+}
 </style>
