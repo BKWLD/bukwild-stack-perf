@@ -67,9 +67,9 @@ main
 	/* Layout */
 	--gutter: 60px;
 	--gutter-mobile: 20px;
-	--max-w-small: calc(750px + gutter * 2);
-	--max-w-medium: calc(1060px + gutter * 2);
-	--max-w: calc(1280px + gutter * 2);
+	--max-w-small: calc(750px + var(--gutter) * 2);
+	--max-w-medium: calc(1060px + var(--gutter) * 2);
+	--max-w: calc(1280px + var(--gutter) * 2);
 	--max-w-wide: calc(1440px);
 	--max-w-full: calc(2560px);
 
